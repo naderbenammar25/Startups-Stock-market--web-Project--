@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/login.js" defer></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <div id ="log">
+    <div id="logstar">
+        <form action="../controller/loginController.php" method="post">
+            <label for="pseudo">Pseudo</label>
+            <input name="pseudo" id="pseudo" type="text"><br><br>
+            <label for="pass">Mot de passe</label>
+            <input name="pass" id="pass" type="password">
+            <label for="showPassword">Afficher le mot de passe</label>
+        <input type="checkbox" id="showPassword">
+            <button type="submit">Se Connecter</button>
+        </form>
+        <p>Vous ne disposez pas d'un compte ?<a href="inscription.html" class="Inscrivez-vous"> Inscrivez-vous </a>dès maintenant !</p>
+    </div>
+    <div id="logcap">
+        <form action="../controller/loginCapController.php" method="post">
+            <label for="pseudo">Pseudo</label>
+            <input name="pseudo" id="pseudo" type="text"><br><br>
+            <label for="pass">Mot de passe</label>
+            <input name="passC" id="passC" type="password">
+            <label for="showPasswordC">Afficher le mot de passe</label>
+        <input type="checkbox" id="showPasswordC">
+            <button type="submit">Se Connecter</button>
+        </form>
+        <p>Vous ne disposez pas d'un compte ?<a href="inscription.html" class="Inscrivez-vous"> Inscrivez-vous </a>dès maintenant !</p>
+    </div>
+    <div id="carre">
+        <img class="sky" src="images/sky.jpg" alt="nuages">
+    </div>
+</div>
+<button  class="btn_cap" onclick="deplacerCarreLeft()">Se connecter en tant que startapeur</button>
+<button  class="btn_star" onclick="deplacerCarreRight()">Se connecter en tant que Capital-risque</button>
+</body>
+</html>

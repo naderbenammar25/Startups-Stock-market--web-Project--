@@ -1,0 +1,347 @@
+//backup
+html: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inscription.css">
+    <script src="inscription.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="up">
+    </header>
+    
+    
+    <div id="inscri">
+        
+    <div id="insrci_start">
+        <label for="nom">nom</label>
+        <input name="nom" id="nom" type="text">
+        <label for="prenom">prenom</label>
+        <input name="prenom" id="prenom" type="text">
+        <label for="cin">CIN</label>
+        <input name="cin" id="cin" type="text">
+        <label for="mail">E-mail</label>
+        <input name="mail" id="mail" type="text">
+        <label for="eName">Nom de l'entreprise</label>
+<input name="eName" id="eName" type="text">
+
+        <label for="eAdresse">Adresse de l'entreprise</label>
+        <input name="eAdresse" id="eAdresse" type="text">
+        <label for="n_registre">n° du registre commercial</label>
+        <input name="n_registre" id="n_registre" type="text">
+        <label for="pseudo">Pseudo</label>
+        <input name="pseudo" id="pseudo" type="text">
+        <label for="mdp">Mot de passe</label>
+        <input name="mdp" id="mdp" type="text">
+        <label for="mdpVer">Retapez votre mot de passe</label>
+        <input name="mdpVer" id="mdpVer" type="text">
+        <button onclick="s_inscrire()">Continuer</button>
+    </div>
+    <div id="insrci_capital">
+        <label for="nomC">nom</label>
+        <input name="nomC" id="nomC" type="text">
+        <label for="prenomC">prenom</label>
+        <input name="prenomC" id="prenomC" type="text">
+        <label for="cinC">CIN</label>
+        <input name="cinC" id="cinC" type="text">
+        <label for="mailC">E-mail</label>
+        <input name="mailC" id="mailC" type="text">
+        <label for="pseudoC">Pseudo</label>
+        <input name="pseudoC" id="pseudoC" type="text">
+        <label for="mdpC">Mot de passe</label>
+        <input name="mdpC" id="mdpC" type="text">
+        <label for="mdpVerC">Retapez votre mot de passe</label>
+        <input name="mdpVerC" id="mdpVerC" type="text">
+        <button onclick="s_inscrireC()">Continuer</button>
+    </div>
+
+
+
+    <div id="carre">
+        <img class="upper_img" src="images/gattotere-SKlwtMS_7hI-unsplash.jpg" alt="Description of the image">
+    </div>
+
+
+</div> 
+<button class="btn_cap" onclick="deplacerCarreLeft()">Creer un compte startapeur</button>
+<button class="btn_star" onclick="deplacerCarreRight()">Creer un compte Capital-risque</button>
+</body>
+</html>
+css:
+#carre {
+    width: 1500px;
+    height: 798px;
+    background: linear-gradient(to bottom, rgb(154, 71, 48), rgb(85, 84, 84));
+    position: relative;
+    
+    top: -10px;
+    right: 728px;
+    border-radius:  15px 0 0 15px;
+    transition: transform 0.5s ease-in-out;
+
+
+  }
+  
+
+  #insrci_start {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+#insrci_capital {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    right: -70px;
+}
+
+#insrci_start input,
+#insrci_capital input {
+    display: block;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#inscri
+{
+    border: 2px solid #000; /* 2px width solid black border */
+    padding: 20px; /* Optional: Add padding to the content inside the border */
+    border-radius: 15px;
+    height: 800px;
+    background-attachment: fixed;
+    top: 200px;
+    
+}
+
+#inscri .input
+{
+    width: 50%;
+}
+
+
+
+#inscri {
+    display: flex;
+    border: 2px solid #a6a6a6;
+    border-radius: 15px;
+    position: relative;
+    left: 150px;
+    top: 200px;
+    width: 800px;
+    
+  }
+  
+  #insrci_start,
+  #insrci_capital {
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    box-sizing: border-box;
+    padding: 20px;
+    
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn_star
+  {
+    position: relative;
+    left: 600px;
+    bottom: 600px;
+  }
+  .btn_cap
+  {
+    position: relative;
+    left: 1000px;
+    bottom: 600px;
+  }
+  
+
+  
+  
+
+
+  
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  #inscri, input {
+    width: 80%; 
+    padding: 10px;
+    margin: 5px 0;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+
+  .upper_img
+  {
+    width: 1500px;
+    height: 798px;
+    background: linear-gradient(to bottom, rgb(154, 71, 48), rgb(85, 84, 84));
+    position: relative;
+    
+    top: -30px;
+    right: 728px;
+    border-radius:  15px 0 0 15px;
+    transition: transform 0.5s ease-in-out;
+
+  }
+  
+
+.logo
+{
+  width: 20%;
+  height: auto;
+  position: relative;
+  bottom: 100px;
+  left: 600px;
+}
+js:
+function s_inscrire() {
+    // Récupération des valeurs des champs
+    let nom = document.getElementById("nom").value;
+    let prenom = document.getElementById("prenom").value;
+    let cin = document.getElementById("cin").value;
+    let mail = document.getElementById("mail").value;
+    let nomE = document.getElementById("eName").value; // Correction ici
+    let adresse = document.getElementById("eAdresse").value;
+    let n_reg = document.getElementById("n_registre").value;
+    let pseudo = document.getElementById("pseudo").value;
+    let mdp = document.getElementById("mdp").value;
+    let mdp2 = document.getElementById("mdpVer").value;
+
+    // Expressions régulières pour la validation
+    let regexNom = /^[a-zA-Z]{2,}$/; // Lettres uniquement, au moins 2 caractères
+    let regexCin = /^\d{8}$/; // 8 chiffres
+    let regexMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Format d'adresse e-mail
+    let regexNregistre = /^[A-Z]\d{10}$/; // Lettre MAJ suivi de 10 chiffres
+    let regexmdp = /^(?=.*[a-zA-Z0-9])(?=.*[$#])[a-zA-Z0-9$#]{8,}$/; // Au moins 8 caractères, lettres/chiffres, terminant par $ ou #
+
+    // Contrôle de saisie
+    let erreurs = [];
+
+    if (!regexNom.test(nom)) {
+        erreurs.push("Nom invalide");
+    }
+
+    if(!regexCin.test(cin))
+    {
+        erreurs.push("n° CIN invalide");
+    }
+
+    if (!regexMail.test(mail)) {
+        erreurs.push("Adresse e-mail invalide");
+    }
+
+    if (!regexNregistre.test(n_reg)) {
+        erreurs.push("Numéro de registre invalide");
+    }
+
+    // Vérification du mot de passe
+    if (!regexmdp.test(mdp)) {
+        erreurs.push("Mot de passe invalide");
+    } else if (mdp !== mdp2) {
+        erreurs.push("Les mots de passe ne correspondent pas");
+    }
+
+    // Affichage des erreurs
+    if (erreurs.length > 0) {
+        alert("Erreurs :\n" + erreurs.join("\n"));
+    } else {
+        window.location.href = "index.html";
+    }
+}
+
+
+
+
+
+function s_inscrireC()
+{
+    let nomC = document.getElementById("nomC").value;
+    let prenomC = document.getElementById("prenomC").value;
+    let cinC = document.getElementById("cinC").value;
+    let mailC = document.getElementById("mailC").value;
+    let pseudoC = document.getElementById("pseudoC").value;
+    let mdpC = document.getElementById("mdpC").value;
+    let mdp2C = document.getElementById("mdpVerC").value;
+
+
+
+// Expressions régulières pour la validation
+let regexNomC = /^[a-zA-Z]{2,}$/; // Lettres uniquement, au moins 2 caractères
+let regexCinC = /^\d{8}$/; // 8 chiffres
+let regexMailC = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Format d'adresse e-mail
+let regexmdpC = /^(?=.*[a-zA-Z0-9])(?=.*[$#])[a-zA-Z0-9$#]{8,}$/; // Au moins 8 caractères, lettres/chiffres, terminant par $ ou #
+
+// Contrôle de saisie
+let erreurs = [];
+
+if (!regexNomC.test(nomC)) {
+    erreurs.push("Nom invalide");
+}
+
+if (!regexMailC.test(mailC)) {
+    erreurs.push("Adresse e-mail invalide");
+}
+
+if(!regexCinC.test(cinC))
+    {
+        erreurs.push("n° CIN invalide");
+    }
+
+
+if (!regexmdpC.test(mdpC)) {
+    erreurs.push("Mot de passe invalide");
+} else if (mdpC !== mdp2C) {
+    erreurs.push("Les mots de passe ne correspondent pas");
+}
+
+// Affichage des erreurs
+if (erreurs.length > 0) {
+    alert("Erreurs :\n" + erreurs.join("\n"));
+} else {
+    window.location.href = "index.html";
+}
+
+}
+
+
+function deplacerCarreLeft() {
+    var carré = document.getElementById("carre");
+
+    
+    carré.style.transform = carre.style.borderRadius = "0 0 0 0";
+    var nouvellePositionLeft = 300;
+
+    carré.style.transform = "translate(" + nouvellePositionLeft + "px";
+}
+
+function deplacerCarreRight() {
+    var carré = document.getElementById("carre");
+
+    
+    
+    var nouvellePositionRight =0;
+    
+    carré.style.transform = "translate(" + nouvellePositionRight + "px";
+
+    carré.style.transform = carre.style.borderRadius = "15px 0 0 15px";
+}
+

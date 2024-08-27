@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upper-inscription</title>
+    <link rel="stylesheet" href="../view/css/inscription.css">
+    <script src="js/inscription.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+<img class="logo" src="images/logo.png" alt="up">
+
+
+  
+  
+  
+
+    <div id="inscri">
+        
+    <div id="insrci_start">
+        <form action="../controller/startuperController.php" method="post" enctype="multipart/form-data">
+        <h2>Compte Startupeur</h2>
+        <label for="nom">nom</label>
+        <input name="nom" id="nom" type="text">
+        <label for="prenom">prenom</label>
+        <input name="prenom" id="prenom" type="text">
+        <label for="cin">CIN</label>
+        <input name="cin" id="cin" type="text">
+        <label for="mail">E-mail</label>
+        <input name="mail" id="mail" type="text">
+        <label for="eName">Nom de l'entreprise</label>      
+        <input name="eName" id="eName" type="text">
+        <label for="eAdresse">Adresse de l'entreprise</label>       
+        <input name="eAdresse" id="eAdresse" type="text">
+        <label for="n_registre">n° du registre commercial</label>
+        <input name="n_registre" id="n_registre" type="text">
+        <label for="pseudo">Pseudo</label>
+        <input name="pseudo" id="pseudo" type="text">
+        <label for="mdp">Mot de passe</label>
+        <input name="mdp" id="mdp" type="password">
+        <label for="mdpVer">Retapez votre mot de passe</label>
+        <input name="mdpVer" id="mdpVer" type="password">
+        <label for="showPassword">Afficher le mot de passe</label>
+        <input type="checkbox" id="showPassword">
+        <label for="photo">Photo :</label>
+        <input type="file" id="photo" name="photo"><br>
+        <button type="submit" onclick="s_inscrire()">Continuer</button>
+    </form>
+    </div>
+    <div id="insrci_capital">
+        <form action="../controller/capitalRisqueController.php" method="post" enctype="multipart/form-data">
+            <h2>Compte Capital Risque</h2>
+        <label for="nomC">nom</label>
+        <input name="nomC" id="nomC" type="text">
+        <label for="prenomC">prenom</label>
+        <input name="prenomC" id="prenomC" type="text">
+        <label for="cinC">CIN</label>
+        <input name="cinC" id="cinC" type="text">
+        <label for="mailC">E-mail</label>
+        <input name="mailC" id="mailC" type="text">
+        <label for="pseudoC">Pseudo</label>
+        <input name="pseudoC" id="pseudoC" type="text">
+        <label for="mdpC">Mot de passe</label>
+        <input name="mdpC" id="mdpC" type="password">
+        <label for="mdpVerC">Retapez votre mot de passe</label>
+        <input name="mdpVerC" id="mdpVerC" type="password">
+        <label for="showPasswordC">Afficher le mot de passe</label>
+        <input type="checkbox" id="showPasswordC"> 
+        <button type="submit" onclick="s_inscrireC()">Continuer</button>
+    
+    </div>
+
+
+
+    <div id="carre">
+        <img class="upper_img" src="images/gattotere-SKlwtMS_7hI-unsplash.jpg" alt="escalier">
+    </div>
+</form>
+
+
+</div> 
+<button class="btn_star"  onclick="deplacerCarreLeft()">Creer un compte startapeur</button>
+<button class="btn_cap"  onclick="deplacerCarreRight()">Creer un compte Capital-risque</button>
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2024 UPPER. Tous droits réservés.</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

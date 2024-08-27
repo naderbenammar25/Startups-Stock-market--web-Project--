@@ -1,0 +1,148 @@
+#carre {
+    width: 2350px;
+    height: 399px;
+    background: linear-gradient(to bottom, rgb(154, 71, 48), rgb(85, 84, 84));
+    position: relative;
+    
+    top: -10px;
+    right: 490px;
+    border-radius:  15px 0 0 15px;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+
+
+  }
+  
+
+  #logstar {
+    
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    left: 120px;
+    
+}
+
+#logcap {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    right: -400px;
+}
+
+#logstar input,
+#logcap input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#log
+{
+    border: 2px solid #000; /* 2px width solid black border */
+    padding: 20px; /* Optional: Add padding to the content inside the border */
+    border-radius: 15px;
+    height: 200px;
+    background-attachment: fixed;
+    
+    
+    
+}
+
+#log .input
+{
+    width: 80%;
+}
+
+
+
+#log {
+    display: flex;
+    border: 2px solid #a6a6a6;
+    border-radius: 15px;
+    position: relative;
+    left: 150px;
+    width: 1000px;
+    
+  }
+  
+  #logstar,
+  #logcap {
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    box-sizing: border-box;
+    padding: 20px;
+    
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn_star
+  {
+    position: relative;
+    left: 500px;
+    bottom: -200px;
+  }
+  .btn_cap
+  {
+    position: relative;
+    left: 1000px;
+    bottom: -200px;
+  }
+  
+
+  
+  
+
+
+  
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  #log, input {
+    width:  80%; 
+    padding: 10px;
+    margin: 5px 0;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+
+  .sky
+  {
+    width: 1000px;
+    height: auto;
+    background: linear-gradient(to bottom, rgb(154, 71, 48), rgb(85, 84, 84));
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    
+
+  }
+  
+
+.logo
+{
+  width: 20%;
+  height: auto;
+  position: relative;
+  bottom: 100px;
+  left: 600px;
+}
+#log
+{
+  width: 1000px;
+  position: relative;
+  left: 230px;
+  top: 200px;
+  height: 400px;
+}
